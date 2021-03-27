@@ -1,0 +1,40 @@
+@import 'variables';
+
+.locale-container {
+    float: right;
+
+    .locale {
+        padding: 1rem;
+        width: 5vw;
+        display: flex;
+        justify-content: flex-end;
+    
+        .list {
+            display: block;
+    
+            li {
+                list-style: none;
+                margin-right: 0.5rem;
+                cursor: context-menu;
+                
+                &:last-of-type {
+                    display: none;
+                }
+            }
+        }
+    
+        .caret {
+            height: 1rem;
+            margin: 0.2rem 0 0 0;
+        }
+    
+        &:hover li:last-of-type {
+            display: block;
+        }
+    
+        &:hover .caret {
+            transform: rotate(180deg);
+            transition: ease-in-out 0.3s;
+        }
+    }
+}
