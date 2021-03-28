@@ -1,0 +1,13 @@
+{
+    "current.language": "en",
+    "LANDING": {
+        "MENU": {
+            "about": "ABOUT ME",
+            "tech": "BLOG",
+            "projects": "PROJECTS",
+            "dog": "MY DOG",
+            "photography": "PHOTOGRAPHY",
+            "ramen": "RAMEN"
+        }
+    }
+}

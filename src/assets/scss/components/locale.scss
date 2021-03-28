@@ -1,38 +1,35 @@
-@import 'variables';
-
 .locale-container {
     float: right;
     position: fixed;
-    left: 90%;
+    right: 10%;
     top: 90%;
 
-    .locale {
-        padding: 1rem;
-        width: 5vw;
+    .wrapper {
         display: flex;
-        justify-content: flex-end;
+        padding: 1rem;
+        font-size: $small-font-size;
     
-        .list {
-            display: block;
+        .custom-select {
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
     
-            li {
-                list-style: none;
-                margin-right: 0.5rem;
-                cursor: context-menu;
-                
-                &:last-of-type {
-                    display: none;
-                }
+            & span:last-child {
+                display: none;
+            }
+    
+            &:hover span:last-child {
+                display: block;
             }
         }
     
+        .custom-select.reverse {
+            flex-direction: column-reverse;
+          }      
+    
         .caret {
             height: 1rem;
-            margin: 0.2rem 0 0 0;
-        }
-    
-        &:hover li:last-of-type {
-            display: block;
+            margin: 0.4rem 0 0 0.5rem;
         }
     
         &:hover .caret {

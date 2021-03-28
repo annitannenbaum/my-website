@@ -14,7 +14,7 @@ export class AppComponent {
     translate.setDefaultLang('en');
   }
 
-  public changeLanguage(language: string) {
-    this.translate.use(language)
+  receiveLanguage($event) {
+    this.translate.use($event)
   }
 }
