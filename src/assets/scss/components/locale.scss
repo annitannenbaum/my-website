@@ -2,6 +2,9 @@
 
 .locale-container {
     float: right;
+    position: fixed;
+    left: 90%;
+    top: 90%;
 
     .locale {
         padding: 1rem;

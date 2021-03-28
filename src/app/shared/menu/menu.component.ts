@@ -8,7 +8,15 @@ export class MenuComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(): void { }
+
+
+  toggleMenu(): void {
+    let menu = document.getElementById("burger-menu");
+    menu.classList.toggle("is-active");
   }
 
+  toggleOverlay(): void {
+
+  }
 }

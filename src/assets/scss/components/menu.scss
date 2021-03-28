@@ -1,5 +1,31 @@
-@import 'variables';
+.burger-container {
+    padding-top: 1rem;
+    position: fixed;
+    left: 94%;
 
-.burger-menu {
-
+    #burger-menu {
+        text-align: center;
+        width: 50px;
+        cursor: pointer;
+      }
+      
+      .line {
+        display: block;
+        margin: 0.4rem;
+        height: 2px;
+        background-color: black;
+        transition: 0.5s ease-in-out;
+      }
+      
+      #burger-menu.is-active .line:nth-child(1) {
+        transform: translateY(18px) rotate(-45deg);
+      }
+      
+      #burger-menu.is-active .line:nth-child(2) {
+        opacity: 0;
+      }
+      
+      #burger-menu.is-active .line:nth-child(3) {
+        transform: translateY(2px) rotate(45deg);
+      }
 }
