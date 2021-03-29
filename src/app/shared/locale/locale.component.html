@@ -1,9 +1,10 @@
 <div class="locale-container">
-    <div class="locale">
-        <div class="list">
-            <li (onClick)="changeLocale('de')">DE</li>
-            <li (onClick)="changeLocale('en')">EN</li>
+    <div class="wrapper">
+        <div class="custom-select" id="custom-select">
+            <span (click)="changeLocale(reverse ? 'de' : 'en')">{{ reverse ? 'DE' : 'EN'}}</span>
+            <span (click)="changeLocale(reverse ? 'en' : 'de')">{{ reverse ? 'EN' : 'DE'}}</span>
         </div>
         <img src="/assets/img/ui/caret.svg" alt="" class="caret">
     </div>
 </div>
+
