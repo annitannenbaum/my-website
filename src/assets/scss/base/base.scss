@@ -12,3 +12,8 @@ html, body {
 *::after {
   box-sizing: border-box;
 }
+
+ul, ul li {
+  list-style: none;
+  padding: 0;
+}

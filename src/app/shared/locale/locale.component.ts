@@ -14,11 +14,6 @@ export class LocaleComponent implements OnInit {
 
   ngOnInit(): void { }
 
-  toggleReverse() {
-    let el = document.getElementById('custom-select')
-    el.classList.toggle('reverse')
-  }
-
   changeLocale(locale: string) {
     this.languageEvent.emit(locale)
     this.reverse = !this.reverse;

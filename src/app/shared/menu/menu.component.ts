@@ -10,13 +10,19 @@ export class MenuComponent implements OnInit {
 
   ngOnInit(): void { }
 
-
-  toggleMenu(): void {
-    let menu = document.getElementById("burger-menu");
-    menu.classList.toggle("is-active");
+  toggleOverlay(): void {
+    let overlay = document.getElementById("overlay")
+    overlay.classList.toggle("is-active")
   }
 
-  toggleOverlay(): void {
 
+  toggleMenu(): void {
+
+    this.toggleOverlay();
+    let burger = document.getElementById("burger-menu");
+    burger.classList.toggle("is-active");
+
+    let menu = document.getElementById("menu-list");
+    menu.classList.toggle("is-visible")
   }
 }
