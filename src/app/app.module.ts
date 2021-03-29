@@ -14,6 +14,7 @@ import { RamenComponent } from './components/ramen/ramen.component';
 import { PhotographyComponent } from './components/photography/photography.component';
 import { MenuComponent } from './shared/menu/menu.component';
 import { LocaleComponent } from './shared/locale/locale.component';
+import { BackgroundLayerComponent } from './shared/background-layer/background-layer.component';
 
 export function HttpLoaderFactory(httpClient: HttpClient) {
   return new TranslateHttpLoader(httpClient);
@@ -27,7 +28,8 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     RamenComponent,
     PhotographyComponent,
     MenuComponent,
-    LocaleComponent
+    LocaleComponent,
+    BackgroundLayerComponent
   ],
   imports: [
     BrowserModule,

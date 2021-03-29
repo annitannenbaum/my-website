@@ -33,7 +33,8 @@
             "stylePreprocessorOptions": {
               "includePaths": [
                 "src/assets/scss/base",
-                "src/assets/scss/components"
+                "src/assets/scss/components",
+                "src/assets/scss/layout"
               ]
           },
             "scripts": []
