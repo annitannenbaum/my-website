@@ -15,10 +15,12 @@ import { PhotographyComponent } from './components/photography/photography.compo
 import { MenuComponent } from './shared/menu/menu.component';
 import { LocaleComponent } from './shared/locale/locale.component';
 import { BackgroundLayerComponent } from './shared/background-layer/background-layer.component';
+import { LandingPageComponent } from './components/landing-page/landing-page.component';
 
 export function HttpLoaderFactory(httpClient: HttpClient) {
   return new TranslateHttpLoader(httpClient);
 }
+
 
 @NgModule({
   declarations: [
@@ -29,7 +31,8 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     PhotographyComponent,
     MenuComponent,
     LocaleComponent,
-    BackgroundLayerComponent
+    BackgroundLayerComponent,
+    LandingPageComponent
   ],
   imports: [
     BrowserModule,
