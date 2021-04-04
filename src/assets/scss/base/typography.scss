@@ -1,8 +1,18 @@
 
 h1, h2, h3, h4, h5 {
     font-family: $font-heading;
+    font-weight: normal;
+    letter-spacing: 0.25rem;
+
+    @include four-k {
+        font-size: 3rem;
+    }
 }
 
 body, p, ul, li {
     font-family: $font-paragraph;
+
+    @include four-k {
+        font-size: 2rem;
+    }
 }

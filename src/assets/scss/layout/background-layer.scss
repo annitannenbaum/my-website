@@ -1,0 +1,62 @@
+.layer-1, .layer-2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.layer-1 {
+    @include phone {
+        content: url('/assets/img/layout/small-background-layer-1.svg');
+    }
+
+    @include tablet {
+        content: url('/assets/img/layout/small-background-layer-1.svg');
+    }
+
+    @include four-k {
+        content: url('/assets/img/layout/big-background-layer-1.svg');
+    }
+}
+
+.layer-2 {
+    @include phone {
+        content: url('/assets/img/layout/small-background-layer-2.svg');
+    }
+
+    @include tablet {
+        content: url('/assets/img/layout/small-background-layer-2.svg');
+    }
+
+    @include four-k {
+        content: url('/assets/img/layout/big-background-layer-2.svg');
+    }
+}
+
+.content {
+    position: absolute;
+    top: 25%;
+    width: 40%;
+    margin-left: 2.5rem;
+
+    @include four-k {
+        top: 40%;
+        margin-left: 10rem;
+        width: 50%;
+    }
+
+    @include tablet {
+        display: none;
+    }
+
+    @include phone {
+        display: none;
+    }
+
+    img  {
+        max-height: 30rem;
+        max-width: auto;
+    }
+
+}
