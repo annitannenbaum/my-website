@@ -8,6 +8,11 @@
             "dog": "MEIN HUND",
             "photography": "FOTOGRAFIE",
             "ramen": "RAMEN"
+        },
+        "HEADER": {
+            "web": "Webentwicklung",
+            "photo": "Fotografie",
+            "design": "Design"
         }
     }
 }

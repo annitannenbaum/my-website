@@ -3,6 +3,7 @@
     top: 0;
     left: 0;
     bottom: 0;
+    z-index: -1;
 }
 
 .layer-1 {
@@ -33,11 +34,17 @@
     }
 }
 
-.content-left {
+.content {
     position: absolute;
-    top: 50%;
-    width: 80%;
-    margin-left: 2rem;
+    top: 25%;
+    width: 40%;
+    margin-left: 2.5rem;
+
+    @include four-k {
+        top: 40%;
+        margin-left: 10rem;
+        width: 50%;
+    }
 
     @include tablet {
         display: none;
@@ -45,6 +52,11 @@
 
     @include phone {
         display: none;
+    }
+
+    img  {
+        max-height: 30rem;
+        max-width: auto;
     }
 
 }

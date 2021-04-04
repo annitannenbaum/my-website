@@ -1,7 +1,8 @@
 
 $phone: 420px;
 $tablet: 1024px;
-$desktop: 1950px;
+$desktop: 1440px;
+$big-desktop: 1950px;
 $four-k: 3000px;
 
 // responsive media queries
@@ -24,8 +25,14 @@ $four-k: 3000px;
     }
 }
 
+@mixin big-desktop {
+    @media (min-width: $desktop) and (max-width: #{$big-desktop - 1px}) {
+        @content;
+    }
+}
+
 @mixin four-k {
-    @media (min-width: $desktop) {
+    @media (min-width: $big-desktop) {
         @content;
     }
 }
