@@ -8,15 +8,12 @@ export class LocaleComponent implements OnInit {
 
   @Output() languageEvent = new EventEmitter<string>();
 
-  reverse: boolean = false;
-
   constructor() { }
 
   ngOnInit(): void { }
 
   changeLocale(locale: string) {
     this.languageEvent.emit(locale)
-    this.reverse = !this.reverse;
   }
 
 }

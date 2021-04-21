@@ -1,18 +1,19 @@
 {
     "current.language": "en",
     "LANDING": {
-        "MENU": {
-            "about": "ABOUT ME",
-            "tech": "BLOG",
-            "projects": "PROJECTS",
-            "dog": "MY DOG",
-            "photography": "PHOTOGRAPHY",
-            "ramen": "RAMEN"
-        },
         "HEADER": {
+            "hello": "Hi, I'm Anni"
+        },
+        "SUBHEADER": {
             "web": "Web Development",
             "photo": "Photography",
             "design": "Design"
         }
+    },
+    "MENU": {
+            "about": "ABOUT ME",
+            "tech": "BLOG",
+            "projects": "PROJECTS",
+            "photography": "PHOTOGRAPHY"
     }
 }

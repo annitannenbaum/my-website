@@ -1,12 +1,15 @@
-<app-background-layer>
-    <img src="/assets/img/illustrations/landing-page-illustration.png">
-</app-background-layer>
-
-<div class="header">
-    <h1>Anna Hoege</h1>
-    <ul>
-        <li>{{ 'LANDING.HEADER.web' | translate }}</li>
-        <li>{{ 'LANDING.HEADER.photo' | translate }}</li>
-        <li>{{ 'LANDING.HEADER.design' | translate }}</li>
-    </ul>
+<div class="landing-container">
+    <div class="header">
+        <h1>{{ 'LANDING.HEADER.hello' | translate | uppercase }}</h1>
+    </div>
+    <div class="subtitle-wrapper">
+        <div class="stripes violet"></div>
+        <p>{{ 'LANDING.SUBHEADER.web' | translate | uppercase }}</p>
+        <div class="stripes yellow"></div>
+        <p>{{ 'LANDING.SUBHEADER.design' | translate | uppercase }}</p>
+        <div class="stripes green"></div>
+        <p>{{ 'LANDING.SUBHEADER.photo' | translate | uppercase }}</p>
+    </div>
 </div>
+
+<app-background-layer></app-background-layer>

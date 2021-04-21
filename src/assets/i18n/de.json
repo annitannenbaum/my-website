@@ -1,18 +1,19 @@
 {
     "current.language": "de",
     "LANDING": {
-        "MENU": {
-            "about": "ÜBER MICH",
-            "tech": "BLOG",
-            "projects": "PROJEKTE",
-            "dog": "MEIN HUND",
-            "photography": "FOTOGRAFIE",
-            "ramen": "RAMEN"
-        },
         "HEADER": {
+            "hello": "Hi, mein Name ist Anni"
+        },
+        "SUBHEADER": {
             "web": "Webentwicklung",
             "photo": "Fotografie",
             "design": "Design"
         }
-    }
+    },
+    "MENU": {
+        "about": "ÜBER MICH",
+        "tech": "BLOG",
+        "projects": "PROJEKTE",
+        "photography": "FOTOGRAFIE"
+}
 }

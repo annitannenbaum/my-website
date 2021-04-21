@@ -1,61 +1,43 @@
-.header {
-    width: 30%;
-    margin: 0 auto;
-    height: auto;
-    position: fixed;
-    top: 30%;
-    left: 55%;
+.landing-container {
+    margin-left: 1rem;
 
-    @include four-k {
-        top: 40%;
+    .header {
+        display: block;
+        font-size: $big-font-size;
+        width: 400px;
     }
+    
+    .subtitle-wrapper {
+        position: absolute;
+        bottom: 3rem;
 
-    @include desktop {
-        left: 70%;
-    }
-
-    @include tablet {
-        left: 40%;
-        width: 50%;
-    }
-
-    @include phone {
-        left: 38%;
-        width: 50%;
-    }
-
-    h1 {
-        font-size: 7rem;
-        margin: 0;
-
-        @include four-k {
-            margin-bottom: 3rem;
+        p {
+            margin-left: 2rem;
+            margin: 0 0 0 2rem;
+            font-weight: medium;
+            font-size: $small-font-size;
+            letter-spacing: 0.25rem;
         }
 
-        @include desktop {
-            font-size: 5rem;
-            margin-bottom: 4rem;
+        .stripes {
+            height: 20px;
+            width: 70px;
+            position: relative;
+            top: 2rem;
+            z-index: -1;
         }
 
-        @include tablet {
-            font-size: 5rem;
+        .violet {
+            background-color: $color-violet;
         }
 
-        @include phone {
-            font-size: 4rem;
-            margin-bottom: 4rem;
-        }
-    }
-
-    li {
-        font-size: 2rem;
-
-        @include four-k {
-            font-size: 3rem;
+        .yellow {
+            background-color: $color-yellow;
+            width: 50px;
         }
 
-        @include desktop {
-            font-size: 1.5rem;
+        .green {
+            background-color: $color-green;
         }
     }
 }

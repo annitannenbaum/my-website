@@ -1,10 +1,61 @@
-.burger-container {
-    padding-top: 1rem;
+.menu {
+  float: right;
+  margin-right: 2.5rem;
+
+  @include tablet {
+    display: none;
+  }
+
+  @include phone {
+    display: none;
+  }
+
+  ul {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    li {
+      text-align: center;
+      position: relative;
+      padding: 0 1rem;
+      cursor: pointer;
+      width: fit-content;
+
+      &:before {
+        content: '';
+        position: absolute;
+        background-color: $color-green;
+        height: 1.5rem;
+        width: 0;
+        bottom: -0.5rem;
+        z-index: -1;
+        transition: 0.4s ease-in-out;
+      }
+    
+      &:hover:before {
+        width: 3rem;
+        height: 1.2rem;
+      }
+    }
+  }
+
+}
+
+.burger-container {
+    display: none;
     flex-direction: column;
     float: right;
     width: 7rem;
-    margin-right: 5rem;
+    margin-right: 2.5rem;
+
+    @include tablet {
+      display: flex;
+    }
+
+    @include phone {
+      display: flex;
+    }
 
     #burger-menu {
         width: 50px;
@@ -45,25 +96,7 @@
           position: relative;
           margin-right: 0.5rem;
           z-index: $z-index-top;
-
           cursor: pointer;
-
-          &:before {
-            content: '';
-            position: absolute;
-            background-color: $color-pink;
-            height: 1.2rem;
-            width: 0;
-            right: -1rem;
-            bottom: 0.5rem;
-            z-index: -1;
-            transition: 0.4s ease-in-out;
-          }
-
-          &:hover:before {
-            width: 50%;
-            height: 1.2rem;
-          }
         }
       }
 
@@ -74,13 +107,13 @@
 
 .overlay {
   position: fixed;
+  background-color: white;
   visibility: hidden;
   height: 100%;
   width: 100%;
   overflow: hidden;
   top: 0;
   left: 0;
-  background-color: $color-white;
   z-index: $z-index-high;
   opacity: 0;
   transition: visibility 0.5s, opacity 0.5s ease-in-out;
