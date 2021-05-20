@@ -2,39 +2,23 @@
     float: right;
     position: fixed;
     right: 5rem;
-    top: 90%;
+    bottom: 3rem;
+    letter-spacing: 0.25rem;
 
-    .wrapper {
-        display: flex;
-        padding: 1rem;
-        font-size: $small-font-size;
-    
-        .custom-select {
-            display: flex;
-            flex-direction: column;
-            cursor: pointer;
-    
-            & span:last-child {
-                display: none;
-            }
-    
-            &:hover span:last-child {
-                display: block;
-            }
+    .de, .en {
+        cursor: pointer;
+
+        &:before {
+            content: '';
+            position: absolute;
+            background-color: black;
+            height: 0.1rem;
+            width: inherit;
+            bottom: -0.5rem;
         }
-    
-        .custom-select.reverse {
-            flex-direction: column-reverse;
-          }      
-    
-        .caret {
-            height: 1rem;
-            margin: 0.4rem 0 0 0.5rem;
-        }
-    
-        &:hover .caret {
-            transform: rotate(180deg);
-            transition: ease-in-out 0.3s;
+
+        &:active::before {
+            width: inherit;
         }
     }
 }

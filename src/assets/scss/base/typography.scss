@@ -3,6 +3,7 @@ h1, h2, h3, h4, h5 {
     font-family: $font-heading;
     font-weight: normal;
     letter-spacing: 0.25rem;
+    line-height: 1.5;
 
     @include four-k {
         font-size: 3rem;
