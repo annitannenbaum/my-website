@@ -8,8 +8,17 @@
     .de, .en {
         cursor: pointer;
 
-        &.active {
-            text-decoration: underline;
+        &:before {
+            content: '';
+            position: absolute;
+            background-color: black;
+            height: 0.1rem;
+            width: inherit;
+            bottom: -0.5rem;
+        }
+
+        &:active::before {
+            width: inherit;
         }
     }
 }
