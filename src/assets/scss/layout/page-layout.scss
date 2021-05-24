@@ -1,0 +1,52 @@
+.page-title {
+    display: block;
+    font-size: $big-font-size;
+    width: 400px;
+}
+
+.page-subtitle {
+    position: absolute;
+    bottom: 3rem;
+
+    p {
+        margin-left: 2rem;
+        margin: 0 0 0 2rem;
+        font-weight: medium;
+        font-size: $small-font-size;
+        letter-spacing: 0.25rem;
+    }
+
+    .stripes {
+        height: 20px;
+        width: 70px;
+        position: relative;
+        top: 2rem;
+        z-index: -1;
+    
+        &.violet {
+            background-color: $color-violet;
+        }
+    
+        &.yellow {
+            background-color: $color-yellow;
+            width: 50px;
+        }
+    
+        &.green {
+            background-color: $color-green;
+        }
+    }
+    
+}
+
+.page-wrapper {
+    margin-left: 1rem;
+}
+
+.page-content {
+    float: right;
+    background-color: $color-pink;
+    height: 60%;
+    width: auto;
+}
+

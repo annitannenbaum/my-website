@@ -14,7 +14,7 @@ import { RamenComponent } from './components/ramen/ramen.component';
 import { PhotographyComponent } from './components/photography/photography.component';
 import { MenuComponent } from './shared/menu/menu.component';
 import { LocaleComponent } from './shared/locale/locale.component';
-import { BackgroundLayerComponent } from './shared/background-layer/background-layer.component';
+import { PageLayoutComponent } from './shared/page-layout/page-layout.component';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -31,7 +31,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     PhotographyComponent,
     MenuComponent,
     LocaleComponent,
-    BackgroundLayerComponent,
+    PageLayoutComponent,
     LandingPageComponent
   ],
   imports: [

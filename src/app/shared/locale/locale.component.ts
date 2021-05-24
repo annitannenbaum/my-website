@@ -12,7 +12,7 @@ export class LocaleComponent implements OnInit {
 
   ngOnInit(): void { }
 
-  changeLocale(locale: string) {
+  changeLocale(locale: string): void {
     this.languageEvent.emit(locale)
   }
 
