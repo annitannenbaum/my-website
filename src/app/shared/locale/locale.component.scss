@@ -1,0 +1,21 @@
+@import 'mixins';
+
+.locale-container {
+    float: right;
+    position: fixed;
+    right: 5rem;
+    bottom: 3rem;
+    letter-spacing: 0.25rem;
+
+    .de, .en {
+        cursor: pointer;
+        touch-action: manipulation;
+    }
+
+    @include tablet-port {
+        right: calc(50% - 2rem);
+        bottom: 0;
+        position: relative;
+        margin: 2rem;
+    }
+}

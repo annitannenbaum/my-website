@@ -1,15 +1,26 @@
+@import 'variables';
+@import 'mixins';
+
 .page-title {
     display: block;
     font-size: $big-font-size;
-    width: 400px;
+    width: fit-content;
 }
 
 .page-subtitle {
-    position: absolute;
+    margin-left: 1rem;
+    position: fixed;
     bottom: 3rem;
 
+    @include tablet-port {
+        display: none;
+    }
+
+    @include phone  {
+        display: none;
+    }
+
     p {
-        margin-left: 2rem;
         margin: 0 0 0 2rem;
         font-weight: medium;
         font-size: $small-font-size;
@@ -40,13 +51,29 @@
 }
 
 .page-wrapper {
-    margin-left: 1rem;
+    margin: 1rem 0 1rem 1rem;
+    width: 40%;
+
+    @include tablet {
+        width: 90%;
+    }
 }
 
 .page-content {
     float: right;
+    overflow: hidden;
+    align-self: center;
     background-color: $color-pink;
-    height: 60%;
-    width: auto;
-}
+    height: 450px;
+    width: 70%;
+    padding: 5rem;
 
+    @include tablet {
+        width: 100%;
+    }
+
+    @include phone {
+        width: 100%;
+        padding: 2.5rem;
+    }
+}

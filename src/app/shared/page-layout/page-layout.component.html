@@ -1,3 +1,18 @@
-<div class="page-content">
-    <ng-content [select]="content"></ng-content>
+<div class="page-wrapper">
+    <div class="page-title">
+        <ng-content select="[title]"></ng-content>
+    </div>
 </div>
+
+    <div class="page-content">
+        <ng-content select="[content]"></ng-content>
+    </div>
+
+    <div class="page-subtitle">
+        <div class="stripes violet"></div>
+        <p>{{ 'LANDING.SUBHEADER.web' | translate | uppercase }}</p>
+        <div class="stripes yellow"></div>
+        <p>{{ 'LANDING.SUBHEADER.design' | translate | uppercase }}</p>
+        <div class="stripes green"></div>
+        <p>{{ 'LANDING.SUBHEADER.photo' | translate | uppercase }}</p>
+    </div>
