@@ -1,5 +1,4 @@
 {
-    "current.language": "de",
     "LANDING": {
         "HEADER": {
             "hello": "Hi, mein Name ist Anni"
@@ -15,5 +14,12 @@
         "tech": "BLOG",
         "projects": "PROJEKTE",
         "photography": "FOTOGRAFIE"
-}
+    },
+    "ABOUT": {
+        "HEADER": "ÜBER MICH", 
+        "CONTENT": {
+            "header": "Motivation",
+            "p_motivation": "Obwohl ich seit meines 10. Geburtstag eine nennenswerte Anzahl an Stunden vor dem PC verbrachte und während meiner Jugend viel Zeit in das Modding von Spielen investierte, entdeckte ich das Programmieren erst während meines Studiums für mich."
+        }
+    }
 }

@@ -15,7 +15,7 @@
     @include tablet-port {
         right: calc(50% - 2rem);
         bottom: 0;
-        position: relative;
+        // position: relative;
         margin: 2rem;
     }
 }

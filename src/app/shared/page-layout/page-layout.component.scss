@@ -51,7 +51,7 @@
 }
 
 .page-wrapper {
-    margin: 1rem 0 1rem 1rem;
+    margin: 1rem;
     width: 40%;
 
     @include tablet {
@@ -60,20 +60,25 @@
 }
 
 .page-content {
-    float: right;
     overflow: hidden;
-    align-self: center;
+    position: absolute;
+    right: 0;
+    top: 20%;
     background-color: $color-pink;
-    height: 450px;
-    width: 70%;
+    height: 60%;
+    width: 65%;
     padding: 5rem;
 
     @include tablet {
+        position: relative;
         width: 100%;
+        height: 450px;
     }
 
     @include phone {
+        position: relative;
         width: 100%;
+        height: 450px;
         padding: 2.5rem;
     }
 }

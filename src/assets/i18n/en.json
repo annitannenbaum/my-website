@@ -15,5 +15,12 @@
             "tech": "BLOG",
             "projects": "PROJECTS",
             "photography": "PHOTOGRAPHY"
+    },
+    "ABOUT": {
+        "HEADER": "About me",
+        "CONTENT": {
+            "header": "Motivation",
+            "p_motivation": "Despite"
+        }
     }
 }
