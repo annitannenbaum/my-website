@@ -11,7 +11,8 @@ export class AppComponent {
 
   constructor(public translate: TranslateService) {
     translate.addLangs(['de', 'en']);
-    translate.setDefaultLang('en');
+    translate.setDefaultLang('en')
+    translate.use('en');
   }
 
   receiveLanguage($event) {

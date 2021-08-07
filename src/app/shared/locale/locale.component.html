@@ -1,6 +1,14 @@
 <div class="locale-container">
-    <span class="en" id="en" (click)="changeLocale('en')">EN</span>
+    <span
+        class="en"
+        id="en"
+        [ngStyle]="{'color': lang === 'en' ? '#FCB5B5' : 'black' }"
+        (click)="changeLocale('en')">EN</span>
     <span> | </span>
-    <span class="de" id="de" (click)="changeLocale('de')">DE</span>
+    <span
+        class="de"
+        id="de"
+        [ngStyle]="{'color': lang === 'de' ? '#FCB5B5' : 'black' }"
+        (click)="changeLocale('de')">DE</span>
 </div>
 

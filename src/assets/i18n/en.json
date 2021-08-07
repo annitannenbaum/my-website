@@ -15,5 +15,16 @@
             "tech": "BLOG",
             "projects": "PROJECTS",
             "photography": "PHOTOGRAPHY"
+    },
+    "ABOUT": {
+        "HEADER": "About me",
+        "CONTENT": {
+            "header_1": "Motivation",
+            "p_1": "As a Frontend Developer and UI/UX-Designer I have been working on making beautiful things for beautiful people for about a year now.",
+            "p_1_1": " Despite spending way too much time in front of a screen ever since my youth, I only discovered my passion for coding during my B.Sc. in Psychology while processing and visualizing survey data in R. Soon after I started attending workshops organized by the awesome PyLadies Hamburg in which I learned Python and messed around with my Raspberry Pi. Eventually I started learning web development with Python/Flask and learned JavaScript soon after.",
+            "p_1_2": " Nowadays I develop web applications in Angular and am loving (almost) every minute of it.",
+            "header_2": "Interests",
+            "p_2": "When I'm not working or studying for my Master's in Software Engineering, I go on long walks with my dog Dobby, try out new recipes or attempt baking tasty things."
+        }
     }
 }

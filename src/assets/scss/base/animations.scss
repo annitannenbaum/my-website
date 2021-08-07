@@ -1,0 +1,35 @@
+.pulse {
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+    50% {
+        transform: scale3d(1.15, 1.15, 1.15);
+    }
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+
+.fadeOutDown {
+    animation-name: fadeOutDown;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeOutDown {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translate3d(0, 200%, 0);
+    }
+}

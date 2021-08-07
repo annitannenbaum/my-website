@@ -1,5 +1,4 @@
 {
-    "current.language": "de",
     "LANDING": {
         "HEADER": {
             "hello": "Hi, mein Name ist Anni"
@@ -15,5 +14,16 @@
         "tech": "BLOG",
         "projects": "PROJEKTE",
         "photography": "FOTOGRAFIE"
-}
+    },
+    "ABOUT": {
+        "HEADER": "ÜBER MICH", 
+        "CONTENT": {
+            "header_1": "Motivation",
+            "p_1": "Als Frontend Entwicklerin und UI/UX-Designerin arbeite ich seit gut einem Jahr daran, schöne Dinge für kluge Köpfe zu schaffen. ",
+            "p_1_1": "Obwohl ich bereits seit meiner Jugend viel zu viel vor dem PC sitze, habe ich meine Leidenschaft für Softwareentwicklung erst während der Datenauswertung mit R im Rahmen meines B.Sc. Psychologie entdeckt. Danach begann ich in Workshops der wunderbaren PyLadies Hamburg Python zu lernen und mit Raspberry Pis zu experimentieren. Schließlich verschlug es mich in die Webentwicklung mit Python/Flask und später JavaScript.",
+            "p_1_2": " Mittlerweile entwickle ich Frontends für Webanwendungen in Angular und TypeScript und liebe (fast) jede Minute davon.",
+            "header_2": "Interessen",
+            "p_2": "Wenn ich nicht arbeite oder für meinen Master in Angewandter Informatik lerne, mache ich mit meinem Hund Dobby lange Spaziergänge in der Natur, probiere neue Rezepte aus oder versuche mich im Backen. "
+        }
+    }
 }

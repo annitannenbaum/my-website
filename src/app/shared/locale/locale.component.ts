@@ -1,19 +1,23 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-locale',
-  templateUrl: './locale.component.html'
+  templateUrl: './locale.component.html',
+  styleUrls: ['./locale.component.scss']
 })
-export class LocaleComponent implements OnInit {
+
+export class LocaleComponent {
 
   @Output() languageEvent = new EventEmitter<string>();
 
-  constructor() { }
+  lang = this.translate.currentLang;
 
-  ngOnInit(): void { }
+  constructor(private translate: TranslateService) { }
 
-  changeLocale(locale: string) {
+  changeLocale(locale: string): void {
     this.languageEvent.emit(locale)
+    this.lang = locale;
   }
 
 }
