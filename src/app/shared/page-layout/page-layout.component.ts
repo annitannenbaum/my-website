@@ -5,4 +5,5 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './page-layout.component.html',
   styleUrls: ['./page-layout.component.scss']
 })
-export class PageLayoutComponent { }
+export class PageLayoutComponent {
+}

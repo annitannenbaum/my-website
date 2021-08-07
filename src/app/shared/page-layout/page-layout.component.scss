@@ -60,14 +60,22 @@
 }
 
 .page-content {
-    overflow: hidden;
+    overflow-y: auto;
     position: absolute;
     right: 0;
     top: 20%;
     background-color: $color-pink;
     height: 60%;
     width: 65%;
-    padding: 5rem;
+    padding: 0 3rem;
+    border: 5rem solid $color-pink;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    align-items: flex-start;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
 
     @include tablet {
         position: relative;

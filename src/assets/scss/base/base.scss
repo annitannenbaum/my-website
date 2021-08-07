@@ -16,3 +16,9 @@ ul, ul li {
   list-style: none;
   padding: 0;
 }
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

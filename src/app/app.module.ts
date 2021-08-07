@@ -7,6 +7,9 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
+import { WindowScrollDirective } from './directives/element-scroll.directive';
+
 import { ProjectsComponent } from './components/projects/projects.component';
 import { PhotographyComponent } from './components/photography/photography.component';
 import { MenuComponent } from './shared/menu/menu.component';
@@ -31,7 +34,8 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     PageLayoutComponent,
     LandingPageComponent,
     AboutComponent,
-    TechComponent
+    TechComponent,
+    WindowScrollDirective
   ],
   imports: [
     BrowserModule,
