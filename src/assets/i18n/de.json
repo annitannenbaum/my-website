@@ -1,12 +1,12 @@
 {
     "LANDING": {
         "HEADER": {
-            "hello": "Hi, mein Name ist Anni"
+            "hello": "Hi, ich bin Anni"
         },
         "SUBHEADER": {
-            "web": "Webentwicklung",
-            "photo": "Fotografie",
-            "design": "Design"
+            "web": "Frontend Entwicklerin",
+            "photo": "Fotografiebegeisterte",
+            "design": "UI/UX-Designer"
         }
     },
     "MENU": {

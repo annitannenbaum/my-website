@@ -1,3 +1,9 @@
-<app-menu></app-menu>
-<router-outlet></router-outlet>
-<app-locale (languageEvent)="receiveLanguage($event)"></app-locale>
+
+<section>
+    <app-menu></app-menu>
+    <app-landing-page></app-landing-page>
+    <app-locale (languageEvent)="receiveLanguage($event)"></app-locale>
+</section>
+<section>
+    <app-about></app-about>
+</section>
