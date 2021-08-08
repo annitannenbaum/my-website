@@ -1,0 +1,26 @@
+@import 'mixins';
+
+.icon-container  {
+    width: 100%;
+
+    @include tablet {
+        display: none;
+    }
+
+    @include tablet-port {
+        display: none;
+    }
+
+    .camera {
+        width: 75%;
+        display: flex;
+        justify-content: center;
+        padding: 2rem 1rem;
+    }
+
+    .icons {
+        width: 75%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}

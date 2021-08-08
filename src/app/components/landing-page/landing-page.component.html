@@ -1,8 +1,16 @@
-<app-page-layout>
+    <div class="landing-wrapper flex-row">
+        <div class="header-container flex-column">
+            <h1>{{ 'LANDING.HEADER.hello' | translate | uppercase }}</h1>
+            <h2>{{ 'LANDING.SUBHEADER.web' | translate }}</h2>
+            <h2>{{ 'LANDING.SUBHEADER.design' | translate }}</h2>
+            <h2>{{ 'LANDING.SUBHEADER.photo' | translate }}</h2>
+            <app-floating-icons></app-floating-icons>
+        </div>
+        <div class="art-container">
+            <img src="/assets/img/illustrations/landing-page-art.svg" alt="">
+        </div>
+    </div>
+    <div class="arrow-container">
+        <img src="/assets/img/ui/arrow.svg" class="arrow floating" id="arrow">
+    </div>
 
-    <div title>
-        <h1>{{ 'LANDING.HEADER.hello' | translate | uppercase }}</h1>
-    </div>
-    <div content>
-    </div>
-</app-page-layout>

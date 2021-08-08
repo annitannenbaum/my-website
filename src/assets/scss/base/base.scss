@@ -1,9 +1,29 @@
 @import 'variables';
+@import 'mixins';
 
 html, body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+html {
+  scroll-snap-type: mandatory;
+  scroll-snap-type: y mandatory;
+
+  @include tablet {
+    scroll-snap-type: none;
+  }
+
+  @include tablet-port {
+    scroll-snap-type: none;
+  }
+}
+
+section {
+  padding-top: 1rem;
+  scroll-snap-align: start;
+  height: 100vh;
 }
 
 *,
@@ -15,10 +35,4 @@ html, body {
 ul, ul li {
   list-style: none;
   padding: 0;
-}
-
-.flex-row {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
 }

@@ -1,9 +1,93 @@
-.content-scroll {
+@import 'mixins';
+@import 'variables';
+
+.about-wrapper {
+    padding: 5rem;
     justify-content: space-around;
-    align-items: flex-start;
+
+    @include desktop {
+        padding: 1rem;
+    }
+
+    @include tablet {
+        flex-direction: column-reverse;
+        padding: 5rem;
+    }
+
+    @include tablet-port {
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 1rem;
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+    .content {
+        width: 700px;
+        background: url('/assets/img/layout/about-bg.svg') no-repeat left bottom;
+
+        @include tablet-port {
+            width: 100%;
+            margin: 2rem 0;
+            background-color: $color-pink;
+        }
+
+        @media (min-width: 1024px) and (max-width: 1180px) {
+            background: url('/assets/img/layout/about-bg-small.svg') no-repeat left top;
+        }
+
+        .text {
+            padding: 8.5rem;
+
+            @media (min-width: 1024px) and (max-width: 1180px) {
+                padding: 7rem;
+            }
+
+            @include tablet-port {
+                padding: 1rem;
+            }
+        }
+    }
+
+    .header-wrapper {
+        margin-right: 5rem;
+
+        @include desktop {
+            margin-right: 1rem;
+        }
+
+        h1 {
+            margin-bottom: 5rem;
+
+            @include desktop {
+                margin-bottom: 1rem;
+            }
+
+            @include tablet {
+                margin: 5rem 0;
+            }
+
+            @include tablet-port {
+                margin: 0;
+            }
+        }
+    }
 }
 
-.arrow {
-    padding: 0 1.2rem;
-    margin-right: 2rem;
+.social-media-wrapper {
+    justify-content: flex-end;
+    margin-right: 2.5rem;
+    margin-top: -1rem;
+
+    @include tablet {
+        padding: 2rem 0;
+    }
+
+    @include tablet-port {
+        padding-bottom: 1rem;
+    }
+
+    a {
+        padding: 0 1rem;
+    }
 }

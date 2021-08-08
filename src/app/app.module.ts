@@ -14,10 +14,10 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { PhotographyComponent } from './components/photography/photography.component';
 import { MenuComponent } from './shared/menu/menu.component';
 import { LocaleComponent } from './shared/locale/locale.component';
-import { PageLayoutComponent } from './shared/page-layout/page-layout.component';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import { AboutComponent } from './components/about/about.component';
 import { TechComponent } from './components/tech/tech.component';
+import { FloatingIconsComponent } from './shared/floating-icons/floating-icons.component';
 
 export function HttpLoaderFactory(httpClient: HttpClient) {
   return new TranslateHttpLoader(httpClient);
@@ -31,11 +31,11 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     PhotographyComponent,
     MenuComponent,
     LocaleComponent,
-    PageLayoutComponent,
     LandingPageComponent,
     AboutComponent,
     TechComponent,
-    WindowScrollDirective
+    WindowScrollDirective,
+    FloatingIconsComponent
   ],
   imports: [
     BrowserModule,
