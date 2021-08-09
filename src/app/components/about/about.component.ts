@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener, Input } from '@angular/core';
+import { Component, OnInit, HostListener, Input, AfterViewInit, AfterContentChecked } from '@angular/core';
 
 @Component({
   selector: 'app-about',
@@ -12,5 +12,10 @@ export class AboutComponent {
     '/assets/img/layout/code.svg',
     '/assets/img/layout/palette.svg'
   ]
+
+  public toggleAnimations() {
+    document.getElementById('text').classList.add('fadeInLeft')
+    document.getElementById('links').classList.add('fadeInRight')
+  }
 
 }

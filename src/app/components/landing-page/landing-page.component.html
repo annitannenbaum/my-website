@@ -1,9 +1,11 @@
     <div class="landing-wrapper flex-row">
         <div class="header-container flex-column">
             <h1>{{ 'LANDING.HEADER.hello' | translate | uppercase }}</h1>
-            <h2>{{ 'LANDING.SUBHEADER.web' | translate }}</h2>
-            <h2>{{ 'LANDING.SUBHEADER.design' | translate }}</h2>
-            <h2>{{ 'LANDING.SUBHEADER.photo' | translate }}</h2>
+            <div class="fadeInLeft">
+                <h2>{{ 'LANDING.SUBHEADER.web' | translate }}</h2>
+                <h2>{{ 'LANDING.SUBHEADER.design' | translate }}</h2>
+                <h2>{{ 'LANDING.SUBHEADER.photo' | translate }}</h2>
+            </div>
             <app-floating-icons [iconPaths]="landingIcons"></app-floating-icons>
         </div>
         <div class="art-container">

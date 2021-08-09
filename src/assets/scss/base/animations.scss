@@ -34,43 +34,49 @@
     }
 }
 
-.float-left {
-    animation-name: float-left;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
+.fadeInLeft {
+    animation-name: fadeInLeft;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.390, 0.575, 0.565, 1.000);
 }
 
-@keyframes float-left {
-    from { transform: rotate(0deg);}
-    65%  { transform: rotate(-5deg);}
-    to   { transform: rotate(0deg);}    
+@keyframes fadeInLeft {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
-.float-right {
-    animation-name: float-right;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
+.fadeInRight {
+    animation-name: fadeInRight;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.390, 0.575, 0.565, 1.000);
 }
 
-@keyframes float-right {
-    from { transform: rotate(0deg);}
-    65%  { transform: rotate(5deg);}
-    to   { transform: rotate(0deg);}    
+@keyframes fadeInRight {
+    0% {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .floating {  
     animation-name: floating;
-    animation-duration: 3s;
+    animation-duration: 2.5s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-    margin-left: 30px;
-    margin-top: 5px;
 }
 
 @keyframes floating {
     from { transform: translate(0,  0px); }
-    65%  { transform: translate(0, 5px); }
+    65%  { transform: translate(0, 15px); }
     to   { transform: translate(0, -0px); }    
 }

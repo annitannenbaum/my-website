@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-menu',
@@ -7,9 +7,11 @@ import { Component } from '@angular/core';
 })
 export class MenuComponent  {
 
+  @ViewChild('overlay') overlay: ElementRef;
+
+  
   toggleOverlay(): void {
-    let overlay = document.getElementById("overlay")
-    overlay.classList.toggle("is-active")
+    this.overlay.nativeElement.classList.toggle("is-active")
   }
 
 
@@ -21,5 +23,14 @@ export class MenuComponent  {
 
     let menu = document.getElementById("menu-list");
     menu.classList.toggle("is-visible")
+  }
+
+  scrollToSection(section: string) {
+     let scroll = document.getElementById(section);
+     scroll.scrollIntoView({behavior: "smooth"});
+
+     if(window.innerHeight < 1024 && this.overlay.nativeElement.classList.contains("is-active")) {
+      this.toggleOverlay();
+     }
   }
 }

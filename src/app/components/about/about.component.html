@@ -1,6 +1,6 @@
 <div class="about-wrapper flex-row">
     <div class="content">
-        <div class="text">
+        <div class="text" id="text" (appear)="toggleAnimations()">
             <h2>{{ 'ABOUT.CONTENT.header_1' | translate }}</h2>
             <p>{{ 'ABOUT.CONTENT.p_1' | translate }}</p>
             <p>{{ 'ABOUT.CONTENT.p_1_1' | translate }}</p>
@@ -16,7 +16,7 @@
         <app-floating-icons [iconPaths]="aboutIcons"></app-floating-icons>
     </div>
 </div>
-<div class="links-wrapper flex-row">
+<div class="links-wrapper flex-row" id="links" (appear)="toggleAnimations()">
     <div class="links">
         <a href="https://www.github.com/annitannenbaum" target=”_blank”>
             <img src="/assets/img/ui/github-icon.svg" alt="github-icon">

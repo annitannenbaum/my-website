@@ -15,6 +15,7 @@ import { LandingPageComponent } from './components/landing-page/landing-page.com
 import { AboutComponent } from './components/about/about.component';
 import { TechComponent } from './components/tech/tech.component';
 import { FloatingIconsComponent } from './shared/floating-icons/floating-icons.component';
+import { AppearDirective } from './shared/directives/add-animation.directive';
 
 export function HttpLoaderFactory(httpClient: HttpClient) {
   return new TranslateHttpLoader(httpClient);
@@ -31,7 +32,8 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     LandingPageComponent,
     AboutComponent,
     TechComponent,
-    FloatingIconsComponent
+    FloatingIconsComponent,
+    AppearDirective
   ],
   imports: [
     BrowserModule,
