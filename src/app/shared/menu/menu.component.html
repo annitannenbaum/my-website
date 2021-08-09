@@ -1,7 +1,6 @@
-<nav class="menu">
+<nav class="menu fadeInRight">
     <ul>
-        <li>{{ 'MENU.about' | translate }}</li>
-        <li>{{ 'MENU.tech' | translate }}</li>
+        <li (click)="scrollToSection('about')">{{ 'MENU.about' | translate }}</li>
         <li>{{ 'MENU.projects' | translate }}</li>
         <li>{{ 'MENU.photography' | translate }}</li>
     </ul>
@@ -14,13 +13,12 @@
         <span class="line"></span>
     </div>
         <ul id="menu-list">
-            <li>{{ 'MENU.about' | translate }}</li>
-            <li>{{ 'MENU.tech' | translate }}</li>
+            <li (click)="scrollToSection('about')">{{ 'MENU.about' | translate }}</li>
             <li>{{ 'MENU.projects' | translate }}</li>
             <li>{{ 'MENU.photography' | translate }}</li>
         </ul>
 </div>
 
-<div class="overlay" id="overlay"></div>
+<div class="overlay" #overlay id="overlay"></div>
 
 
