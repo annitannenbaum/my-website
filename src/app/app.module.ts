@@ -5,10 +5,7 @@ import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
-import { WindowScrollDirective } from './directives/element-scroll.directive';
 
 import { ProjectsComponent } from './components/projects/projects.component';
 import { PhotographyComponent } from './components/photography/photography.component';
@@ -34,12 +31,10 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     LandingPageComponent,
     AboutComponent,
     TechComponent,
-    WindowScrollDirective,
     FloatingIconsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     HttpClientModule,
     TranslateModule.forRoot({
       loader: {

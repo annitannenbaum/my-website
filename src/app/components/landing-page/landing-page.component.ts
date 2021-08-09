@@ -7,4 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingPageComponent {
 
+  landingIcons = [
+    '/assets/img/layout/camera.svg',
+    '/assets/img/layout/code.svg',
+    '/assets/img/layout/palette.svg'
+  ]
+
 }

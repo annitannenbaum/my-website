@@ -76,7 +76,7 @@
     }
 }
 
-.social-media-wrapper {
+.links-wrapper {
     justify-content: flex-end;
     margin-right: 2.5rem;
     margin-top: -1rem;
@@ -91,5 +91,10 @@
 
     a {
         padding: 0 1rem;
+
+        img:hover {
+            transform: translate(5px, -5px);
+            transition: .3s ease-in-out;
+        }
     }
 }
