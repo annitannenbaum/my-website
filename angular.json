@@ -25,6 +25,7 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
+              "src/assets/ui/favicon.png",
               "src/assets"
             ],
             "styles": [
@@ -32,9 +33,7 @@
             ],
             "stylePreprocessorOptions": {
               "includePaths": [
-                "src/assets/scss/base",
-                "src/assets/scss/components",
-                "src/assets/scss/layout"
+                "src/assets/scss/base"
               ]
           },
             "scripts": []
